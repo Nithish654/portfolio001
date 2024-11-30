@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by [NITHISH V J]">
+    <title>NITHISH V J - Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <video autoplay loop muted playsinline class="back-video">
+        <source src="3130284-uhd_3840_2160_30fps.mp4" type="video/mp4">
+
+        Your browser does not support the video tag.
+    </video>
+    <!-- Header -->
+    <header>
+        <h1> NITHISH V J </h1>
+        <p>Projects</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="internships.html">Internship</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Projects -->
+    <section id="project">
+        <div class="project-card">
+            <h2>Project Experience</h2>
+
+            <!-- Project 1: Jukebox -->
+            <button onclick="toggleVisibility('jukebox')">Jukebox</button>
+            <div id="jukebox" class="hidden">
+                <p><strong>Jukebox (Java & SQL):</strong> Developed a jukebox application using Java and SQL during the
+                    Java
+                    Developer course at NIIT. The application allows users to browse, play, and manage playlists. It
+                    integrates SQL for song data storage and retrieval. The application also features search
+                    functionality,
+                    shuffle, repeat, and song ratings. This project enhanced my Java and SQL skills, focusing on
+                    database
+                    management and user interface design.</p>
+            </div>
+
+            <!-- Project 2: Attendance App -->
+            <button onclick="toggleVisibility('attendanceApp')">Attendance App</button>
+            <div id="attendanceApp" class="hidden">
+                <p><strong>Attendance App (Android Studio):</strong> Built a mobile app for attendance tracking using
+                    Android Studio. The app allows teachers to mark attendance, generate reports, and notify students of
+                    missing entries. It uses Firebase for real-time data syncing. A dashboard shows attendance trends,
+                    and
+                    the app is optimized for performance. This project strengthened my mobile app development and
+                    Firebase
+                    integration skills.</p>
+            </div>
+
+            <!-- Project 3: Library Management System -->
+            <button onclick="toggleVisibility('libraryApp')">Library Management System</button>
+            <div id="libraryApp" class="hidden">
+                <p><strong>Library Management System (Spring Boot & SQL):</strong> Currently developing a Spring
+                    Boot-based
+                    library management system. This app handles book issuance, returns, and generates reports. The
+                    backend
+                    uses SQL to manage books and user data, while the frontend is built with a responsive design. The
+                    system
+                    also features an admin panel for managing users and books. This project enhances my skills in
+                    backend
+                    development and database management.</p>
+            </div>
+
+            <!-- Project 4: LoRa-Based Communication for Agriculture -->
+            <button onclick="toggleVisibility('loraComm')">LoRa-Based Communication for Agriculture</button>
+            <div id="loraComm" class="hidden">
+                <p><strong>LoRa-Based Communication for Agriculture (Arduino & LoRa Modules):</strong> Developed a
+                    LoRa-based communication system to transmit environmental data such as temperature and humidity for
+                    agricultural monitoring. The system uses Arduino boards and LoRa modules for long-range data
+                    transmission. This solution enables farmers to remotely monitor farm conditions and receive
+                    real-time
+                    alerts. The project focuses on the integration of IoT for smart agriculture, improving efficiency in
+                    farming operations.</p>
+            </div>
+
+            <!-- Project 5: SOS Helmet -->
+            <button onclick="toggleVisibility('sosHelmet')">SOS Helmet</button>
+            <div id="sosHelmet" class="hidden">
+                <p><strong>SOS Helmet (Arduino & GSM):</strong> Designed an SOS helmet that sends an emergency SMS to a
+                    predefined list of contacts when an accident occurs. The helmet is equipped with a sensor that
+                    detects
+                    impact or sudden movements, triggering the SMS alert. It uses an Arduino board and GSM module to
+                    send
+                    messages with the exact location. This project aims to improve safety for riders, providing
+                    real-time
+                    alerts to friends or family members in case of an accident.</p>
+            </div>
+
+            <!-- Project 6: SPR-Based D-Shaped Dual-Core RI Sensor -->
+            <button onclick="toggleVisibility('sprSensor')">SPR-Based D-Shaped Dual-Core RI Sensor</button>
+            <div id="sprSensor" class="hidden">
+                <p><strong>SPR-Based D-Shaped Dual-Core RI Sensor:</strong> Currently working on developing an SPR-based
+                    D-shaped dual-core refractive index (RI) sensor. The sensor is designed to measure changes in
+                    refractive
+                    index using Surface Plasmon Resonance (SPR) technology. This project involves optimizing the sensor
+                    for
+                    high sensitivity and accuracy. It will be applied in fields such as bio-detection and environmental
+                    monitoring. The focus is on improving sensor performance for real-time applications in the medical
+                    and
+                    industrial sectors.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [NITHISH V J]. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleVisibility(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+
+</html>

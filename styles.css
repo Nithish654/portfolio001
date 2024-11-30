@@ -1,0 +1,363 @@
+/* Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scrolling for navigation */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: transparent;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: background 1s ease-in-out;
+    line-height: 1.7;
+    overflow: auto; /* Enable scrolling */
+    position: relative; /* Ensure positioning context for the video */
+}
+
+/* Background Video Section */
+.back-video {
+    position: fixed; /* Fix the video in the background */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    object-fit: cover; /* Ensure the video covers the entire screen */
+    z-index: -1; /* Keep it behind content */
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Slightly transparent black background */
+    color: #fff;
+    font-family: "Trebuchet MS", sans-serif;
+    font-style: italic;
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation for header */
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background: linear-gradient(135deg, #dd01ff, #fd010e);
+    text-decoration: underline;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Main Content Styling */
+section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-align: center; /* Center-align text for better readability */
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ffcc00; /* Bright color for section headers */
+    text-transform: uppercase;
+    animation: slideUp 1.5s ease; /* Animation for section header */
+}
+
+section h3 {
+    font-size: 1.6rem;
+    color: #00bfff; /* Accent color for subheadings */
+    margin-bottom: 10px;
+}
+
+section p,
+section ul {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* About Me Section */
+.about-card {
+    margin-bottom: 30px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border-left: 5px solid #333;
+    border-radius: 8px;
+    animation: slideUp 1.5s ease; /* Slide-up animation for cards */
+    color: #fff;
+}
+
+/* Projects Section */
+.projects-card {
+    margin-bottom: 30px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 5px solid #00bfff;
+    border-radius: 8px;
+    animation: slideUp 1.5s ease; /* Slide-up animation for cards */
+}
+
+/* Contact Details Section */
+.contactinfo-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contactinfo-card h3 {
+    font-size: 1.8rem;
+    color: #ffcc00;
+}
+
+#certificates {
+    position: relative;
+    color: #fff;
+    padding: 50px;
+    z-index: 2; /* Ensures content is above the background */
+}
+
+.certificates-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.certificates-card h2 {
+    font: size 2.3rem;
+    color: #ffcc00;
+}
+
+.certificates-card h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #00ccff; /* Bright color for headings */
+}
+
+.certificates-card h5 {
+    font-size: 1.4rem;
+    color: #f901fd;
+}
+
+.certificates-card p,
+.certificates-card ul li {
+    font-size: 1.2rem;
+    color: #eaeaea; /* Light gray text */
+    line-height: 1.6;
+}
+
+/* Academics Card Styling */
+.academics-card {
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #f4f4f913;
+    border: 2px solid #ffc93c;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Title for the Academics Section */
+.academics-card h2 {
+    color: #ffc93c;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Individual Grade Section Styling */
+.academics-card h3 {
+    color: #13f996;
+    background: transparent;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+/* Strong Text Styling */
+.academics-card p strong {
+    font-weight: bold;
+}
+
+/* View Marksheet Button Styling */
+.view-marksheet-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #040404;
+    color: #fefefe;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.view-marksheet-btn:hover {
+    background-color: #ffa41b;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+/* Resume Section */
+#resume-section {
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.resume-container {
+    display: inline-block;
+    overflow: hidden;
+    width: 80%;
+    max-width: 600px;
+    animation: rollDown 1.5s ease-in-out;
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border: 3px solid #00bfff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+}
+
+.resume-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    opacity: 0.9; /* Slight transparency */
+    transform: scale(1);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.resume-image:hover {
+    transform: scale(1.05); /* Zoom on hover */
+    opacity: 1;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradient button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb); /* Reverse gradient on hover */
+    transform: scale(1.1); /* Scale effect */
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes rollDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
